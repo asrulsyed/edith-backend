@@ -34,7 +34,10 @@ module.exports = () => {
       app.use(`/${router}`, require(`../routers/${router}.router`));
     else app.use(`/api/${router}`, require(`../routers/${router}.router`));
   });
-
+  
+  app.use("*", (req, res) => {
+    res.json({ msg: "Hello everyone!" });
+  });
   // app.use(express.static(path.resolve(__dirname, "../views")));
   // app.get("*", (req, res) => res.sendFile(path.resolve(__dirname, "../views", "index.html")));
 
