@@ -9,7 +9,7 @@ module.exports = function () {
         includeEmail: true,
         consumerKey: process.env.TWITTER_CONSUMER_KEY,
         consumerSecret: process.env.TWITTER_CONSUMER_SECRET,        
-        callbackURL: "/auth/twitter/callback",               
+        callbackURL: "https://edith-backend.vercel.app/auth/twitter/callback",               
        /** 
         Use This in dev cause twitter api doesn't allow localhost
         callbackURL: "http://127.0.0.1:3500/auth/twitter/callback",
