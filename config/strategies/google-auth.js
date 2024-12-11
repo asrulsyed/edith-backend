@@ -8,7 +8,7 @@ module.exports = function () {
       {
         clientID: process.env.GOOGLE_CLIENT_ID,
         clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-        callbackURL: "/auth/google/callback",
+        callbackURL: "https://edith-backend.vercel.app/auth/google/callback",
       },
       ctrl.verifyGoogleLogin,
     ),
